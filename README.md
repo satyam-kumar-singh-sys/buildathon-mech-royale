@@ -1,10 +1,12 @@
 # Oval Sentinel — Builders Mech Royale
 
-Oval Sentinel is team **GFC**'s Python bot for [Builders – Mech Royale](https://www.joinbuilders.org/buildathon): a 16-mech 3D battle royale on the Ohio State University campus. Each bot receives observations and returns movement, aim and weapon actions ten times per second, with a 50 ms response budget. The arena's zone shrinks over time; weapons, power cubes, upgrades and cover shape the fight.
+Oval Sentinel is my team, **GFC**'s Python bot for [Builders – Mech Royale](https://www.joinbuilders.org/buildathon): a 16-mech 3D battle royale on the Ohio State University campus. Each bot receives observations and returns movement, aim and weapon actions ten times per second, with a 50 ms response budget. The arena's zone shrinks over time; weapons, power cubes, upgrades and cover shape the fight.
+
+The Builders Buildathon featured four tracks with concrete challenges and practice benchmarks rather than a single open-ended project prompt. Mech Royale made strategy measurable through game results: we could submit a bot, use the practice leaderboard to guide iteration, and then see how it performed under the final competition format. A useful lesson was that a practice score alone does not guarantee performance against a different set of opponents.
 
 ## Competition result
 
-**GFC placed 387th of 418 teams** on the final leaderboard and did not qualify for the top-32 qualifying round. The team's best practice score was **1.66 placement points** (starter baseline: 1.21); its practice leaderboard position was **396th of 418**. The scored entry was commit `6c2586be94a8`.
+**GFC placed 387th of 410 teams** on the final leaderboard shown below and did not qualify for the top-32 qualifying round. The team's best practice score was **1.66 placement points** (starter baseline: 1.21); its practice leaderboard position was **396th of 418**. The scored entry was commit `6c2586be94a8`.
 
 ![Final leaderboard showing GFC in 387th place](docs/mech-royale-leaderboard.png)
 
@@ -35,7 +37,7 @@ The second command expects JSON-lines protocol input on stdin; stdout is reserve
 
 ## Official conformance check (requires the complete kit and Docker)
 
-The checked-in `mechfight-kit.tar.gz` can be extracted into the ignored `kit/` directory. Then run the recorded-stream check on the host and, on a machine with Docker, in the competition-style sandbox:
+Obtain the official kit separately and place `mechfight-kit.tar.gz` in the repository root, then extract it into the ignored `kit/` directory. The archive and extracted kit are not tracked. Run the recorded-stream check on the host and, on a machine with Docker, in the competition-style sandbox:
 
 ```sh
 mkdir -p kit
